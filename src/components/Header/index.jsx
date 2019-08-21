@@ -1,24 +1,17 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Layout, Icon } from 'antd'
 
 const { Header } = Layout
 
-const HeaderApp = () => {
-  const [collapsed, setCollapsed] = useState(false)
-
-  const toggle = () => {
-    setCollapsed(!collapsed)
-  }
-  return (
-    <Header style={{ background: '#fff', paddingLeft: '1em' }}>
+const HeaderApp = ({ collapsed, toggle }) => (
+    <Header style={{ background: '#fff', paddingLeft: '0' }}>
       <Icon
-        className='trigger'
+        className='Trigger'
         type={collapsed ? 'menu-unfold' : 'menu-fold'}
         onClick={toggle}
-      />{' '}
+      />
       Challenge Interakt
     </Header>
-  )
-}
+)
 
 export default HeaderApp

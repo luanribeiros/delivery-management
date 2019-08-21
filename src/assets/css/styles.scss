@@ -1,17 +1,25 @@
-#components-layout-demo-custom-trigger .trigger {
+.Trigger {
   font-size: 18px;
   line-height: 64px;
   padding: 0 24px;
   cursor: pointer;
   transition: color 0.3s;
-}
-
-#components-layout-demo-custom-trigger .trigger:hover {
+  &:hover {
   color: #1890ff;
+  }
 }
 
-#components-layout-demo-custom-trigger .logo {
+.Layout {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.Logo {
   height: 32px;
   background: rgba(255, 255, 255, 0.2);
   margin: 16px;
 }
+
