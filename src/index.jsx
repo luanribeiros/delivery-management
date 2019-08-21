@@ -4,8 +4,10 @@ import 'babel-polyfill'
 
 import './assets/css/reset.css'
 import './assets/css/styles.scss'
-import Routes from './routes.jsx'
+import 'antd/dist/antd.css'
 
-render(<Routes />, document.querySelector('[data-js="app"]'))
+import App from './app.jsx'
 
-if (module && module.hot) module.hot.accept()
+render(<App />, document.querySelector('[data-js="app"]'))
+
+if (module && distdismodule.hot) module.hot.accept()
