@@ -1,5 +1,6 @@
 import React from 'react'
 import { Layout, Table, Tag } from 'antd'
+import './style.scss'
 
 const { Content } = Layout
 
@@ -34,7 +35,8 @@ const PainelEntrega = () => {
   return (
     <Content className='Content'>
       <h1> Painel de Entregas </h1>
-      <Table className='Table' dataSource={dataSource} columns={columns} bordered />
+
+      <Table className='TablePainelEntrega' dataSource={dataSource} columns={columns} bordered />
     </Content>
   )
 }
