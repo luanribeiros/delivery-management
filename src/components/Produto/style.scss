@@ -1,0 +1,28 @@
+.Input {
+  margin-bottom: 10px;
+}
+.InputLast {
+  max-width: 140px;
+  margin-left: 5px;
+}
+
+.BgProdutoForm {
+  font-weight: bold;
+  section {
+    display: flex;
+    justify-content: space-between;
+  }
+  button {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  max-width: 500px;
+  margin: 30px auto;
+}
+
+.TableProduto {
+  font-weight: bold;
+  max-width: 500px;
+  margin: 0 auto;
+}
