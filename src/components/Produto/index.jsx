@@ -6,7 +6,7 @@ const { Content } = Layout
 const Produto = () => {
   return (
     <Content className='Content'>
-      <h1> Produto </h1>
+      <h1> Produtos </h1>
     </Content>
   )
 }

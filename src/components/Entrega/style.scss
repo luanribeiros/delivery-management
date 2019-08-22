@@ -1,4 +1,30 @@
+.Input,
+.Select,
+.DatePicker,
+.TextArea {
+  margin-bottom: 10px;
+}
+.BgEntrega {
+  font-weight: bold;
+  &Form {
+    width: 40%;
+
+    button {
+      width: 100%;
+      margin-top: 20px;
+    }
+  }
+  &Entregador {
+    display: flex;
+    justify-content: space-between;
+  }
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-around;
+}
+
 .TableEntrega {
-  max-width: 500px;
-  margin-top:60px;
+  font-weight: bold;
+  width: 40%;
+  padding: 1em;
 }

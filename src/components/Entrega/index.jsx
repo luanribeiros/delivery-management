@@ -1,7 +1,8 @@
 import React from 'react'
-import { Layout, Table, Icon, Input, Select, DatePicker } from 'antd'
+import { Layout, Table, Icon, Input, Select, DatePicker, Button } from 'antd'
 import './style.scss'
 
+const { TextArea } = Input
 const { Content } = Layout
 
 const columns = [
@@ -16,15 +17,23 @@ const columns = [
     colSpan: 0,
     dataIndex: 'edit',
     key: 'edit',
-    render: edit => <a><Icon type='edit' /></a>
+    render: edit => (
+      <a>
+        <Icon type='edit' />
+      </a>
+    )
   },
   {
     key: 'delete',
     colSpan: 0,
     dataIndex: 'delete',
     key: 'delete',
-    render: del => <a><Icon type='delete' /></a>
-  },
+    render: del => (
+      <a>
+        <Icon type='delete' />
+      </a>
+    )
+  }
 ]
 
 const dataSource = [
@@ -45,18 +54,72 @@ const dataSource = [
 const Entrega = () => {
   return (
     <Content className='Content'>
-      <h1> Entrega </h1>
+      <h1> Entregas </h1>
 
-      <section>
-        <Input placeholder="placeholder" />
-        <Select style={{ width: '32%' }}>
-          <Option value="rmb">RMB</Option>
-          <Option value="dollar">Dollar</Option>
-        </Select>
-        <DatePicker />
+      <section className='BgEntrega'>
+        <section className='BgEntregaForm'>
+          <label>
+            Local: <br />
+            <Input
+              placeholder='Digite o local da entrega a ser realizada'
+              className='Input'
+            />
+          </label>
+          <section className='BgEntregaEntregador'>
+            <div>
+              <label>
+                Entregador:
+                <br />
+                <Select
+                  style={{ width: '250px' }}
+                  className='Select'
+                  placeholder='Selecione o entregador'
+                >
+                  <Option value='rmb'>RMB</Option>
+                  <Option value='dollar'>Dollar</Option>
+                </Select>
+              </label>
+            </div>
+            <div>
+              <label>
+                Data:
+                <br />
+                <DatePicker className='DatePicker' />
+              </label>
+            </div>
+          </section>
+          <label>
+            Produtos: <br />
+            <Select
+              style={{ width: '100%' }}
+              className='Select'
+              placeholder='Selecione o entregador'
+            >
+              <Option value='rmb'>RMB</Option>
+              <Option value='dollar'>Dollar</Option>
+            </Select>
+          </label>
+          <br />
+          <label>
+            Descrição: <br />
+            <TextArea
+              rows={4}
+              placeholder='ok'
+              className='TextArea'
+              placeholder='Escreva observações sobre a entrega a ser feita'
+            />
+          </label>
+
+          <Button type='primary'> Salvar </Button>
+        </section>
+
+        <Table
+          className='TableEntrega'
+          dataSource={dataSource}
+          columns={columns}
+          bordered
+        />
       </section>
-
-      <Table className='TableEntrega' dataSource={dataSource} columns={columns} bordered />
     </Content>
   )
 }
