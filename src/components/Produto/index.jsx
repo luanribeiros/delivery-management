@@ -5,15 +5,8 @@ const { Content } = Layout
 
 const Produto = () => {
   return (
-    <Content
-      style={{
-        margin: '24px 16px',
-        padding: 24,
-        background: '#fff',
-        minHeight: 280
-      }}
-    >
-      Produto
+    <Content className='Content'>
+      <h1> Produto </h1>
     </Content>
   )
 }

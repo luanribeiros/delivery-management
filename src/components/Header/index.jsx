@@ -10,7 +10,7 @@ const HeaderApp = ({ collapsed, toggle }) => (
         type={collapsed ? 'menu-unfold' : 'menu-fold'}
         onClick={toggle}
       />
-      Challenge Interakt
+      INTERAKT Challenge
     </Header>
 )
 

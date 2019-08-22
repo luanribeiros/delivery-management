@@ -1,19 +1,40 @@
 import React from 'react'
-import { Layout } from 'antd'
+import { Layout, Table, Tag } from 'antd'
 
 const { Content } = Layout
 
+const columns = [
+  {
+    title: 'Acompanhamento de Entregas',
+    colSpan: 2,
+    dataIndex: 'name',
+    key: 'name'
+  },
+  {
+    key: 'tags',
+    colSpan: 0,
+    dataIndex: 'tags',
+    key: 'tags',
+    render: tags => <Tag color='geekblue'> pendente </Tag>
+  }
+]
+
+const dataSource = [
+  {
+    key: '1',
+    name: 'Rua de Teste, 100'
+  },
+  {
+    key: '2',
+    name: 'Rua de Teste, 100'
+  }
+]
+
 const PainelEntrega = () => {
   return (
-    <Content
-      style={{
-        margin: '24px 16px',
-        padding: 24,
-        background: '#fff',
-        minHeight: 280
-      }}
-    >
-      Painel Entrega
+    <Content className='Content'>
+      <h1> Painel de Entregas </h1>
+      <Table className='Table' dataSource={dataSource} columns={columns} bordered />
     </Content>
   )
 }

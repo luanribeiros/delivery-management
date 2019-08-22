@@ -23,3 +23,21 @@
   margin: 16px;
 }
 
+.Content {
+  margin: 24px 16px;
+  padding: 24px;
+  background: #fff;
+  min-height: 280px;
+  h1 {
+    font-weight: bold;
+    border-bottom: 1px solid grey;
+    padding-bottom: 0.5em;
+  }
+}
+
+.Table {
+  max-width: 500px;
+  margin:60px auto;
+}
+
+
