@@ -1,1 +1,6 @@
-# delivery-management
+# Usage
+
+```
+yarn install
+yarn start
+```
