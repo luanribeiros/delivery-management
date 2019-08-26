@@ -30,13 +30,18 @@ const dataSource = [
     name: 'Rua de Teste, 100'
   }
 ]
-
+// https://ikt-prosel-lr.herokuapp.com/v1/graphql
 const PainelEntrega = () => {
   return (
     <Content className='Content'>
-      <h1> Painel de Entregas </h1>
+      <h1> Painel de Entregas</h1>
 
-      <Table className='TablePainelEntrega' dataSource={dataSource} columns={columns} bordered />
+      <Table
+        className='TablePainelEntrega'
+        dataSource={dataSource}
+        columns={columns}
+        bordered
+      />
     </Content>
   )
 }

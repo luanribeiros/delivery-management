@@ -75,8 +75,10 @@ const Entrega = () => {
                   className='Select'
                   placeholder='Selecione o entregador'
                 >
-                  <Option value='rmb'>RMB</Option>
-                  <Option value='dollar'>Dollar</Option>
+                  <Option value='rmb'>Opção 1</Option>
+                  <Option value='dollar'>Opção 2</Option>
+                  <Option value='dollar'>Opção 3</Option>
+                  <Option value='dollar'>Opção 4</Option>
                 </Select>
               </label>
             </div>
@@ -95,8 +97,10 @@ const Entrega = () => {
               className='Select'
               placeholder='Selecione o entregador'
             >
-              <Option value='rmb'>RMB</Option>
-              <Option value='dollar'>Dollar</Option>
+              <Option value='rmb'>Opção 1</Option>
+              <Option value='dollar'>Opção 2</Option>
+              <Option value='dollar'>Opção 3</Option>
+              <Option value='dollar'>Opção 4</Option>
             </Select>
           </label>
           <br />

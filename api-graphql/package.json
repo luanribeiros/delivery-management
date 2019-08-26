@@ -1,0 +1,8 @@
+{
+  "name": "api-graphql",
+  "version": "1.0.0",
+  "description": "An Api graphql Delivery Management",
+  "main": "index.js",
+  "author": "Luan Ribeiro",
+  "license": "MIT"
+}

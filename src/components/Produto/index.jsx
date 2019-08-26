@@ -59,7 +59,7 @@ const Produto = () => {
         <section>
           <div>
             <label>
-              Local: <br />
+              Descrição: <br />
               <Input
                 placeholder='Digite a descrição do produto'
                 className='Input'
